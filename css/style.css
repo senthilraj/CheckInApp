@@ -867,3 +867,233 @@ ul.usefull-for li a.u-windows span:hover{
 	width: 100%;
 }
 
+
+/* animation */
+
+.demo-animation {
+	float: left;
+	width: 100%;
+	background: #32968c; /* Old browsers */
+	min-height: 400px;
+    background: -moz-linear-gradient(left,  #32968c 0%, #32968c 50%, #1e726a 50%, #1e726a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#32968c), color-stop(50%,#32968c), color-stop(50%,#1e726a), color-stop(100%,#1e726a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #32968c 0%,#32968c 50%,#1e726a 50%,#1e726a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #32968c 0%,#32968c 50%,#1e726a 50%,#1e726a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #32968c 0%,#32968c 50%,#1e726a 50%,#1e726a 100%); /* IE10+ */
+    background: linear-gradient(to right,  #32968c 0%,#32968c 50%,#1e726a 50%,#1e726a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32968c', endColorstr='#1e726a',GradientType=1 ); /* IE6-9 */
+}
+
+
+.demo-animation-wrap {
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.left-section {
+	float: left;
+	width: 50%;
+	position: relative;
+	min-height: 680px;
+}
+
+.mobile-scanner-table {
+	background: url('../images/Mobile-stand-small.png');
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 519px;
+	opacity: 0;
+	z-index: 98;
+}
+
+.mobile-scanner-id-card {
+	background: url('../images/ID-Card.png') no-repeat;
+	background-size: 160px;
+	position: absolute;
+	left: 0;
+	top: -5px;
+	width: 160px;
+	height: 365px;
+	opacity: 0;
+    z-index: 96;
+}
+
+.mobile-scanner-screen-1 {
+	background: url('../images/Id-Scanner-Press.png') no-repeat;
+	position: absolute;
+	left: 139px;
+    bottom: 203px;
+    width: 136px;
+    height: 206px;
+    opacity: 0;
+    z-index: 97;
+}
+
+.mobile-scanner-screen-2 {
+	background: url('../images/Id-Scanner.png') no-repeat;
+	position: absolute;
+	left: 139px;
+    bottom: 203px;
+    width: 136px;
+    height: 206px;
+    opacity: 0;
+    z-index: 97;
+}
+
+.mobile-scanner-screen-3 {
+	background: url('../images/Id-Scanner-Success.png') no-repeat;
+	position: absolute;
+	left: 139px;
+    bottom: 203px;
+    width: 136px;
+    height: 206px;
+    opacity: 0;
+    z-index: 97;
+}
+
+.mobile-scanner-hand-tab {
+	background: url('../images/Tab-Hand.png') no-repeat;
+	position: absolute;
+    background-size: 200px;
+    left: 130px;
+    bottom: -100px;
+    width: 200px;
+    height: 332px;
+    z-index: 99;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.mobile-scanner-hand-tab-click {
+	bottom: 0px;
+}
+
+.right-section {
+	float: left;
+	width: 50%;
+	position: relative;
+	min-height: 680px;
+}
+
+.mobile-admin-world {
+	background: url('../images/World-map.png') no-repeat;
+	background-size: 90%;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 100%;
+    height: 270px;
+    z-index: 98;
+}
+
+.mobile-admin-manager {
+	background: url('../images/Manager.png') no-repeat;
+	background-size: 90%;
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    width: 250px;
+    height: 390px;
+    z-index: 98;
+}
+
+.mobile-admin-app {
+	background: url('../images/CheckIn-Admin.png') no-repeat;
+	background-size: 80%;
+	position: absolute;
+	left: 230px;
+	top: 60px;
+	width: 239px;
+	height: 413px;
+	z-index: 98;
+}
+
+.mobile-admin-Time-Entry {
+	background: url('../images/Time.png') no-repeat;
+	background-size: 100%;
+    position: absolute;
+    left: 312px;
+    top: 270px;
+    width: 38px;
+    height: 17px;
+    z-index: 98;
+    opacity: 0;
+}
+
+.mobile-update-arrow {
+	background: url('../images/arrow-red.png') no-repeat;
+	background-size: 100%;
+    position: absolute;
+    right: 0px;
+    top: 247px;
+    width: 80px;
+    height: 60px;
+    z-index: 98;
+    opacity: 0;
+}
+
+.mobile-scanner-steps {
+	position: absolute;
+    right: 0px;
+    top: 150px;
+    width: 180px;
+    color: #FFF;
+    font-family: arial;
+}
+
+.mobile-scanner-steps ul {
+	list-style-type: none;
+	padding:0;
+}
+
+.mobile-scanner-steps ul li {
+	margin-bottom: 10px;
+	opacity: 0;
+	background: url('../images/arrow-tick.png') no-repeat;
+	background-position: 0;
+	padding-left: 25px;
+}
+
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-arrow {
+    animation: blink normal 1s infinite ease-in-out;
+}
+
+.mobile-admin-text {
+	position: absolute;
+    right: 0px;
+    bottom: 150px;
+    width: 300px;
+    font-size: 20px;
+    color: #FFF;
+    font-family: arial;
+    text-align: center;
+    opacity: 0;
+}
+
+.mobile-admin-button {
+	position: absolute;
+    right: 0px;
+    bottom: 100px;
+    width: 300px;
+    font-size: 20px;
+    color: #FFF;
+    font-family: arial;
+    text-align: center;
+    opacity: 0;
+}
